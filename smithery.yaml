@@ -1,0 +1,44 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - openaiApiKey
+    properties:
+      openaiApiKey:
+        type: string
+        default: ""
+        description: Your OpenAI API key
+      defaultModel:
+        type: string
+        default: gpt-4o
+        description: Default GPT model to use
+      defaultTemperature:
+        type: number
+        default: 0.7
+        description: Temperature value for generation
+      maxTokens:
+        type: number
+        default: 1000
+        description: Maximum number of tokens to generate
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'python',
+      args: ['chatgpt_server.py'],
+      env: {
+        OPENAI_API_KEY: config.openaiApiKey,
+        DEFAULT_MODEL: config.defaultModel,
+        DEFAULT_TEMPERATURE: config.defaultTemperature.toString(),
+        MAX_TOKENS: config.maxTokens.toString()
+      }
+    })
+  exampleConfig:
+    openaiApiKey: sk-abc123example
+    defaultModel: gpt-4o
+    defaultTemperature: 0.7
+    maxTokens: 1000
