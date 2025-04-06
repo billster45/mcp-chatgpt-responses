@@ -1,4 +1,5 @@
 # MCP ChatGPT Server
+[![smithery badge](https://smithery.ai/badge/@billster45/mcp-chatgpt-responses)](https://smithery.ai/server/@billster45/mcp-chatgpt-responses)
 
 This MCP server allows you to access OpenAI's ChatGPT API directly from Claude Desktop.
 
@@ -14,6 +15,14 @@ This MCP server allows you to access OpenAI's ChatGPT API directly from Claude D
 - Use your own OpenAI API key
 
 ## Setup Instructions
+
+### Installing via Smithery
+
+To install ChatGPT Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@billster45/mcp-chatgpt-responses):
+
+```bash
+npx -y @smithery/cli install @billster45/mcp-chatgpt-responses --client claude
+```
 
 ### Prerequisites
 
