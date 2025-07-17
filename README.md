@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/billster45-mcp-chatgpt-responses-badge.png)](https://mseep.ai/app/billster45-mcp-chatgpt-responses)
+
 # MCP ChatGPT Server
 [![smithery badge](https://smithery.ai/badge/@billster45/mcp-chatgpt-responses)](https://smithery.ai/server/@billster45/mcp-chatgpt-responses)
 
