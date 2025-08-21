@@ -1,6 +1,7 @@
 [![MseeP.ai Security Assessment Badge](https://mseep.net/pr/billster45-mcp-chatgpt-responses-badge.png)](https://mseep.ai/app/billster45-mcp-chatgpt-responses)
 
 # MCP ChatGPT Server
+[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/billster45/mcp-chatgpt-responses)](https://archestra.ai/mcp-catalog/billster45__mcp-chatgpt-responses)
 [![smithery badge](https://smithery.ai/badge/@billster45/mcp-chatgpt-responses)](https://smithery.ai/server/@billster45/mcp-chatgpt-responses)
 
 This MCP server allows you to access OpenAI's ChatGPT API directly from Claude Desktop.
